@@ -1,0 +1,29 @@
+.contain {
+  display: flex;
+  width: 100%;
+  max-width: 1570px;
+  margin: auto;
+  height: 100vh;
+  padding: 50px;
+}
+.main {
+  width: 100%;
+}
+.section__main {
+  display: flex;
+  width: 100%;
+}
+
+.main__info {
+  flex: 1;
+  padding: 35px 10px 0 0;
+  border-right: 2px solid var(--secondary-color) ;
+
+}
+.main__subtitle {
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+.main__subtitle--margin{
+  margin-top: 50px;
+}

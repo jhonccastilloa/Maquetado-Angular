@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --primary-color:#1a2151;
+  --secondary-color:#70769c;
+  --tertiary-color:#5f53ff;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}

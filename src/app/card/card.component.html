@@ -1,0 +1,51 @@
+<div
+  class="card"
+  [ngClass]="{ 'card--proccess': data.finished.includes('proccess') }"
+>
+  <div class="card__leading">
+    <div
+      class="circle"
+      [ngClass]="{ 'circle--proccess': data.finished.includes('proccess') }"
+    ></div>
+    <div class="card__content">
+      <h2 class="card__title">{{ data.name }}</h2>
+      <p
+        class="card__finish"
+        [ngClass]="{
+          'card__finish--red':
+            data.finished.toLowerCase() == 'failed' ||
+            data.finished.toLowerCase() == 'canceled',
+          'color--process': data.finished.includes('proccess')
+        }"
+      >
+        {{ data.finished }}
+      </p>
+    </div>
+  </div>
+  <div class="card__trailing">
+    <p class="card__money">
+      <span
+        class="card__money-span"
+        [ngClass]="{
+          'card__money-span--green': data.money.includes('+')
+        }"
+        >{{ data.money }}</span
+      >
+      <span
+        class="card__money-subspan"
+        [ngClass]="{
+          'color--process': data.finished.includes('proccess')
+        }"
+        >{{ data.cript }}</span
+      >
+    </p>
+    <p
+      class="card__discount"
+      [ngClass]="{
+        'color--process': data.finished.includes('proccess')
+      }"
+    >
+      {{ data.moneyDiscount }}
+    </p>
+  </div>
+</div>

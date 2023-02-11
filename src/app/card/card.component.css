@@ -1,0 +1,72 @@
+.card {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 5px 0;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.card--proccess {
+  background-color: #f6f5ff;
+  color: var(--tertiary-color);
+}
+.card__title{
+  font-size: 18px;
+  font-weight: 500;
+}
+.circle {
+  width: 2.8rem;
+  aspect-ratio: 1;
+  background-color: #eef1f6;
+  border-radius: 50%;
+}
+.circle--proccess {
+  background-color: var(--tertiary-color);
+}
+.card__leading {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.card__finish {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+.card__finish--red {
+  color: red;
+  font-weight: 700;
+}
+
+.card__trailing {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+.card__money{
+  display: flex;
+  gap: 10px;
+
+}
+.card__money-span {
+  font-weight: 700;
+}
+.card__money-subspan {
+  color: var(--secondary-color);
+}
+.card__money-span--green {
+  color: #25b89c;
+}
+.card__discount {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.color--process {
+  color: var(--tertiary-color);
+}

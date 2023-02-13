@@ -9,13 +9,15 @@
     <section class="section__main">
       <div class="main__info">
         <h2 class="main__subtitle">Pending execution</h2>
-        <div class="main__cards" *ngFor="let card of getProccessData()">
-          <app-card [data]="card"></app-card>
-        </div>
+        <app-card
+          *ngFor="let card of getProccessData()"
+          [data]="card"
+        ></app-card>
         <h2 class="main__subtitle main__subtitle--margin">Completed</h2>
-        <div class="main__cards" *ngFor="let card of getCompletedData()">
-          <app-card [data]="card"></app-card>
-        </div>
+        <app-card
+          *ngFor="let card of getCompletedData()"
+          [data]="card"
+        ></app-card>
       </div>
       <!-- aside -->
       <app-aside></app-aside>
